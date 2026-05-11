@@ -29,3 +29,15 @@ The third flag can be found on one of these routes.
 
 http://target.ine.local/wp-content/uploads/
 
+<img width="720" height="186" alt="image" src="https://github.com/user-attachments/assets/b4dc6282-9ddc-4ab8-85a0-9761edf7f971" />
+
+Flag 4: An overlooked backup file in the webroot can be problematic if it reveals sensitive configuration details.
+
+Using WordPress, we searched Google for the backup file path. We found the URL; entering it will download a file with the `.bak` extension. Simply use `cat` to view the result and you'll get the flag.
+
+<img width="720" height="163" alt="image" src="https://github.com/user-attachments/assets/cf18a299-ece1-4b63-806a-01285706eda5" />
+
+<img width="720" height="226" alt="image" src="https://github.com/user-attachments/assets/f45fa9dc-3652-4af9-b8f6-bb49983de53d" />
+
+
+
