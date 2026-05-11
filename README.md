@@ -39,5 +39,17 @@ Using WordPress, we searched Google for the backup file path. We found the URL; 
 
 <img width="720" height="226" alt="image" src="https://github.com/user-attachments/assets/f45fa9dc-3652-4af9-b8f6-bb49983de53d" />
 
+Flag 5: Certain files may reveal something interesting when mirrored.
+
+We used httrack, the tool for duplicating websites. We used the default httrack command with the URL and saved the output to a directory.
+
+httrack http://target.ine.local -O INE 
+
+We navigated to the path where we saved the output and found many files and directories. This generated a long list, which we're not interested in, so we'll use grep to search for the flag throughout the directory. 
+
+grep -i "FLAG5" -R target.ine.local/
+
+<img width="720" height="93" alt="image" src="https://github.com/user-attachments/assets/86dc1d56-a8ba-4c72-82b6-51b2c47cce84" />
 
 
+And that's how we found all the flags.
